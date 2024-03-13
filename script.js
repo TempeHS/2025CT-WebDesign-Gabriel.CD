@@ -1,4 +1,4 @@
-let enterName = prompt("Enter your name");
+let enterName = prompt("Gabriel");
 let playerGuess;
 let computerGuess = randomNum();
 let playerFeedback = computerGuess;
