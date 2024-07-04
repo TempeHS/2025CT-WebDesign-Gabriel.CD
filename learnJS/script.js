@@ -1,20 +1,15 @@
-let enterName = prompt("Enter your name lil ");
-let playerGuess;
-let computerGuess = randomNum();
-let playerFeedback = computerGuess;
-loadDIV();
-
-function randomNum() {  
-  return Math.floor(Math.random() * (10 - 1 + 1) + 1)
-}
-
-function loadDIV () {
-    document.getElementById("ScriptThisDIV").innerHTML = "<H1>Hello " + enterName + "</H1>"
-    document.getElementById("ScriptThisDIV").innerHTML = document.getElementById("ScriptThisDIV").innerHTML + "<H2>Guess a number between 1 & 10</H2>"
-    document.getElementById("ScriptThisDIV").innerHTML = document.getElementById("ScriptThisDIV").innerHTML + playerFeedback
-}
-
-function enterNumber () {
-    playerGuess = prompt("Enter a number") 
-}
-
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 3,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
